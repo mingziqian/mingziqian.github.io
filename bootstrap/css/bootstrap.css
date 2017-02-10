@@ -2891,15 +2891,17 @@ table th[class*="span"],
   width: 0;
   height: 0;
   vertical-align: top;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-top: 10px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
   content: "";
 }
 
 .dropdown .caret {
-  margin-top: 8px;
+  margin-top: 6px;
   margin-left: 2px;
+  position: absolute;
+  right: 120px;
 }
 
 .dropdown-menu {
@@ -3198,6 +3200,7 @@ button.close {
 .btn {
   display: inline-block;
   *display: inline;
+  outline: 0;
   padding: 4px 12px;
   margin-bottom: 0;
   *margin-left: .3em;
@@ -3264,9 +3267,7 @@ button.close {
 }
 
 .btn:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: 0;
 }
 
 .btn.active,
@@ -3823,8 +3824,8 @@ input[type="submit"].btn.btn-mini {
 .btn-info .caret,
 .btn-success .caret,
 .btn-inverse .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+  border-top-color: #555555;
+  border-bottom-color: #555555;
 }
 
 .btn-group-vertical {
@@ -5210,13 +5211,17 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
-  outline: none;
+  outline: 0;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
      -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding-box;
           background-clip: padding-box;
+}
+
+button {
+	outline: 0;
 }
 
 .modal.fade {
