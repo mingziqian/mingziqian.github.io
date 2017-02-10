@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Study Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EECS330 Project">
+    <meta name="author" content="¯\_(ツ)_/¯">
+
+    <!-- core bootstrap css -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- customized css-->
+    <link rel="stylesheet" href="start_style.css">
+    <!-- bootstrap responsive css -->
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+  </head>
+
+  <body onload="startTime()">
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="start.html">Start Studying</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+        <h3><a href="index.html">Study Tracker</a></h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h2>EECS 330: Research Paper</h2>
+
+      <div class="row-fluid marketing">
+        <div class="span5">
+          <div class="thumbnail" id="clock">
+            <div class="caption">
+              <p id="current_time">Current time: </p>
+            </div>
+          </div>
+
+          </div>
+          <div class = "span7">
+            <div class="btn-group">
+              <button id="add_goal" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                ADD WORK GOAL
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu pull-right" role="menu">
+                  <li>
+                      <a href="#" onclick="set1hr()">1 Hour</a>
+                  </li>
+                  <li>
+                      <a href="#" onclick="set2hr()">2 Hour</a>
+                  </li>
+                  <li>
+                      <a href="#" onclick="set3hr()">3 Hour</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                      <a href="#" onclick="setGoal()">Other time</a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+
+      </div>
+
+      <br>
+      <div id="progress_p" class="progress progress-striped active">
+          <div id="progress_c" class="bar" style="width: 100%;"></div>
+                <p id="time_left">00:00:00 left</p>
+      </div>
+
+      <p id="time_spent">00:00:00</p>
+      <p id="timer_p" class="text-info">spent studying so far!</p>
+      <button class="btn btn-success btn-circle" type="button" id = "start" onclick="startTimer()">START</button>
+      <button class="btn btn-danger btn-circle" type="button" href="#myModal" role="button"  data-toggle="modal"
+              id = "end" onclick="endTimer()">END</button>
+
+
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">SUMMARY</h3>
+          </div>
+          <div class="modal-body">
+            <h4>Time Studied:</h4>
+            <h1 id="summary">00:00:00</h1>
+            <hr>
+            <h3 id="summary_goal">Goal: </h3>
+            <h4>Good job!</h4>
+            <hr>
+            <p>Did you finish the assignment?</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" onclick="goHome()">YES</button>
+            <button class="btn" data-dismiss="modal" aria-hidden="true">NO</button>
+          </div>
+      </div>
+
+
+      <hr>
+
+      <div class="footer">
+        <p>EECS 330: Human Computer Interaction - Group ¯\_(ツ)_/¯</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- core bootstrap javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="start.js"></script>
+
+  </body>
+</html>

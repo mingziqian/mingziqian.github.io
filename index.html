@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Study Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EECS330 Project">
+    <meta name="author" content="¯\_(ツ)_/¯">
+
+    <!-- core bootstrap css -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- customized css-->
+    <link rel="stylesheet" href="home_style.css">
+    <!-- bootstrap responsive css -->
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="start.html">Start Studying</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+        <h3><a href="index.html">Study Tracker</a></h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>Start tracking!</h1>
+<!--
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th><p class="lead text-info">Ready to work?</p></th>
+              <th><p class="lead text-info">Studied without app?</p></th>
+              <th><p class="lead text-success">Check performance?</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><button class="btn btn-primary btn-circle" type="button">Start Studying </button></td>
+              <td><button class="btn btn-info btn-circle" type="button">Log Session</button></td>
+              <td><button class="btn btn-success btn-circle" type="button">See Analytics</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+-->
+			<div class="buttons">
+				
+				<div id="select-assignment" class="btn btn-default btn-circle form" type="button">
+				Assignment
+				
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					select an assignment...
+					<span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Reading Journal</a></li>
+					<li><a href="start.html">Research Paper</a></li>
+					<li><a href="#">Final Presentation</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Add New Assignment</a></li>
+				  </ul>
+				</div>
+				<a href="#" class="cancel">Cancel</a>
+				</div>
+				
+				<div id="select-class" class="btn btn-default btn-circle form" type="button">
+					Select Class
+				
+					<div id="class-buttons" class="btn-group" role="group">
+						<button type="button" class="subject btn btn-default"><b>EECS</b><br>330</button>
+						<button type="button" class="subject btn btn-default"><b>Math</b><br>311</button>
+						<button type="button" class="subject btn btn-default"><b>History</b><br>300</button>
+						<button type="button" class="subject btn btn-default"><b>Chem</b><br>250</button>
+					</div>
+				<a href="#" class="cancel">Cancel</a>
+				</div>
+				
+				<button id="study" class="btn btn-primary btn-circle" type="button">
+				    <p>Ready to study?</p>
+				    Start Studying
+				
+				</button>
+				
+        <button class="btn btn-info btn-circle" type="button">
+            <p>Studied without app?</p>
+            Log Session
+        </button>
+              
+        <button class="btn btn-success btn-circle" type="button">
+           	<p>Check your performance</p>See Analytics
+        </button>
+        
+      </div>
+
+
+      <hr>
+      <br>
+      <div class="row-fluid marketing">
+        <div class="span3">
+          <div class="thumbnail">
+            <img src="Northwestern.jpeg"  class="img-circle">
+            <div class="caption">
+              <h3>EECS 330</h3>
+              <p>Current Grade: 98%</p>
+              <p><a href="#" class="btn btn-primary" role="button">Enter Grades</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="thumbnail">
+            <img src="Northwestern.jpeg"  class="img-circle">
+            <div class="caption">
+              <h3>Math 311</h3>
+              <p>Current Grade: 95%</p>
+              <p><a href="#" class="btn btn-primary" role="button">Enter Grades</a> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class = "span3">
+          <div class="thumbnail">
+            <img src="Northwestern.jpeg"  class="img-circle">
+            <div class="caption">
+              <h3>History 300</h3>
+              <p>Current Grade: 60%</p>
+              <p><a href="#" class="btn btn-primary" role="button">Enter Grades</a> </p>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="thumbnail">
+            <img src="Northwestern.jpeg"  class="img-circle">
+            <div class="caption">
+              <h3>Chem 250</h3>
+              <p>Current Grade: 88%</p>
+              <p><a href="#" class="btn btn-primary" role="button">Enter Grades</a> </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>EECS 330: Human Computer Interaction - Group ¯\_(ツ)_/¯</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- core bootstrap javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="home.js"></script>
+
+  </body>
+</html>
