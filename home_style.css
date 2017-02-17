@@ -263,3 +263,32 @@ h3 {
 	opacity: .75;
 	transition: opacity 300ms ease;
 }
+
+.modal { 
+	overflow: visible; 
+	max-width: 500px;
+	max-height: 400px;
+}
+
+.modal-body { overflow-y: visible; }
+
+#log_assignment{
+	font-size: 18px;
+	color: black;
+	background-color: lightgrey;
+	max-width:  360px; 
+	margin-bottom: 12px;
+}
+
+.title{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 80px;
+	margin-top: 16px;
+}
+
+.form-control{
+	width: 300px;
+	font-size: 16px;
+}

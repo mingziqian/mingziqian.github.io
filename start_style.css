@@ -111,7 +111,6 @@ li {
 
 #clock{
     background: lightgray;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
     margin-left: 20px;
 }
 
@@ -129,11 +128,10 @@ li {
     width: 300px;
     padding: 20px;
     text-shadow: 0.5px 0.5px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 #timer_p{
-    padding-right: 60px;
+    padding-right: 100px;
     text-align: right;
     font-size: 18px;
     font-weight: bold;
@@ -144,7 +142,7 @@ li {
     padding-top: 48px;
     padding-bottom: 48px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
 }
 
@@ -157,11 +155,19 @@ li {
     border-style: outset;
     border-width: 2px;
     border-color: royalblue;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 #time_left{
     position: absolute;
-    margin-left: 280px;
+    margin-left: 220px;
     margin-top: 4px;
+    font-weight: bold;
+}
+
+#time_left_p{
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: bold;
 }
