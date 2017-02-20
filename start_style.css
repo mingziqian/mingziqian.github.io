@@ -131,7 +131,7 @@ li {
 }
 
 #timer_p{
-    padding-right: 100px;
+    padding-right: 160px;
     text-align: right;
     font-size: 18px;
     font-weight: bold;
@@ -144,6 +144,10 @@ li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100px;
     font-weight: bold;
+}
+
+#sec{
+    font-size: 30px;
 }
 
 .progress{
@@ -170,4 +174,8 @@ li {
     margin-top: 4px;
     font-size: 16px;
     font-weight: bold;
+}
+
+#sec_left{
+    font-size: 12px;
 }

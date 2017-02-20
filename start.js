@@ -22,8 +22,10 @@ function startTimer()
 
 function myTimer()
 {
-    document.getElementById("time_spent").innerHTML=pad(parseInt(++sec/3600%60,10))+":"+pad(parseInt(sec/60%60,10))+":"+pad(sec%60);
-    document.getElementById("time_left").innerHTML=pad(parseInt((goal_seconds-sec)/3600%60,10))+":"+pad(parseInt((goal_seconds-sec)/60%60,10))+":"+pad((goal_seconds-sec)%60);
+    document.getElementById("hrmin").innerHTML=pad(parseInt(++sec/3600%60,10))+":"+pad(parseInt(sec/60%60,10));
+    document.getElementById("sec").innerHTML=":"+pad(sec%60);
+    document.getElementById("hrmin_left").innerHTML=pad(parseInt((goal_seconds-sec)/3600%60,10))+":"+pad(parseInt((goal_seconds-sec)/60%60,10));
+    document.getElementById("sec_left").innerHTML=":"+pad((goal_seconds-sec)%60);
     var percentage = (sec/goal_seconds)*100%100 ;
     document.getElementById("progress_c").setAttribute("style", "width: "+percentage+"%;");
 }
@@ -34,7 +36,8 @@ function endTimer() {
     clearInterval(myVar);
     document.getElementById("summary").innerHTML = document.getElementById("time_spent").innerHTML;
     document.getElementById("summary_goal").innerHTML = document.getElementById("add_goal").innerHTML;
-    document.getElementById("time_spent").innerHTML = "00:00:00";
+    document.getElementById("hrmin").innerHTML = "00:00";
+    document.getElementById("sec").innerHTML = ":00";
     sec = 0;
 }
 
