@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Study Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EECS330 Project">
+    <meta name="author" content="¯\_(ツ)_/¯">
+
+    <!-- core bootstrap css -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- customized css-->
+    <link rel="stylesheet" href="grade_style.css">
+    <!-- bootstrap responsive css -->
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="start.html">Start Studying</a></li>
+          <li class="active"><a href="grade.html">Classes</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+        <h3><a href="index.html">Study Tracker</a></h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h2 class="text-info">CLASS PAGE</h2>
+          <hr>
+          <h3>EECS 330: Human Computer Interaction</h3>
+          <h4>Assignments</h4>
+
+          <div class="tabbable"> <!-- Only required for left/right tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Incomplete</a></li>
+              <li><a href="#tab2" data-toggle="tab">Completed</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                <table id="incomplete_table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Due</th>
+                      <th>Hours</th>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <div class="alert alert-success alert-dismissable hidden">
+                      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                      <strong>Success!</strong> Grade has been recorded.
+                  </div>
+                  <tbody>
+                    <tr>
+                      <td>Problem Set #4</td>
+                      <td>Jan 23</td>
+                      <td>4.6</td>
+                      <td><form id="ps2-grade" class="form-inline">
+                        <input id="ps2-input1" type="text" class="input-mini" placeholder="--">&nbsp/
+                        <input id="ps2-input2" type="text" class="input-mini" placeholder="--">
+                          &nbsp<button class="btn-mini btn-success" onclick="enter1()">Enter</button>
+                      </form></td>
+                    </tr>
+                    <tr>
+                      <td>Problem Set #5</td>
+                      <td>Jan 31</td>
+                      <td>7.2</td>
+                      <td><form id="ps3-grade" class="form-inline">
+                        <input id="ps3-input1" type="text" class="input-mini" placeholder="--">&nbsp/
+                        <input id="ps3-input2" type="text" class="input-mini" placeholder="--">
+                        &nbsp<button class="btn-mini btn-success" onclick="enter2()">Enter</button>
+                      </form></td>
+                    </tr>
+                    <tr>
+                      <td>Final Project</td>
+                      <td>Mar 10</td>
+                      <td>N/A</td>
+                      <td><form id="final-grade" class="form-inline">
+                        <input id="final-input1" type="text" class="input-mini" placeholder="--">&nbsp/
+                        <input id="final-input2" type="text" class="input-mini" placeholder="--">
+                        &nbsp<button class="btn-mini btn-success" onclick="enter3()">Enter</button>
+                      </form></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="tab2">
+                              <table id = "mytable" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Due</th>
+                      <th>Hours</td>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Problem Set #1</td>
+                      <td>Jan 8</td>
+                      <td>12.5</td>
+                      <td>98 / 100</td>
+                    </tr>
+                    <tr>
+                      <td>Research Paper #1</td>
+                      <td>Jan 13</td>
+                      <td>8.0</td>
+                      <td>10 / 10</td>
+                    </tr>
+                    <tr>
+                      <td>Problem Set #2</td>
+                      <td>Jan 15</td>
+                      <td>2.0</td>
+                      <td>75 / 100</td>
+                    </tr>
+                    <tr>
+                      <td>Problem Set #3</td>
+                      <td>Jan 19</td>
+                      <td>5.6</td>
+                      <td>82 / 100</td>
+                    </tr>
+                    <tr>
+                      <td>Research Paper #2</td>
+                      <td>Feb 2</td>
+                      <td>12.0</td>
+                      <td>9 / 10</td>
+                    </tr>
+                     <tr>
+                      <td>Midterm Exam</td>
+                      <td>Feb 13</td>
+                      <td>18.0</td>
+                      <td>86 / 100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <span><button class="add btn-primary btn-circle-small" type="button">
+					  <p><b>+</b></p>
+				    </button><span>
+            <span class="text-info"><a href="#"><b>Add New Assignment</b></a></span>
+          </div>
+
+          <div class="span1"></div>
+          
+          <div class = "span5">
+            <button class="study btn btn-primary btn-circle" type="button">
+                <p>Start<br>Studying</p>
+              </button>
+				
+              	<button class="log btn btn-info btn-circle" type="button">
+              		<p>Log<br>Session</p>
+              	</button>
+                <br>
+                <br>
+
+                <div id="container"></div>
+        </div>
+
+      </div>
+
+      
+
+
+
+
+      <hr>
+
+      <div class="footer">
+        <p>EECS 330: Human Computer Interaction - Group ¯\_(ツ)_/¯</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- core bootstrap javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="grade.js"></script>
+
+  </body>
+</html>

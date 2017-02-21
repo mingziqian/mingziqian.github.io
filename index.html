@@ -25,13 +25,18 @@
         	<ul class="nav nav-pills pull-right">
           		<li class="active"><a href="index.html">Home</a></li>
 				<li class="study"><a href="#">Start Studying</a></li>
-				<li><a href="#">Classes</a></li>
+				<li><a href="grade.html">Classes</a></li>
 				<li><a href="#">Analytics</a></li>
         	</ul>
         	<h3><a href="index.html">Study Tracker</a></h3>
       	</div>
 
       	<hr>
+
+		<div class="alert alert-success alert-dismissable hidden">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<strong>Success!</strong> Log session successful.
+		</div>
 
      	<div class="jumbotron">
 
@@ -48,9 +53,9 @@
 								<span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">
-								<li><a href="./start.html">Research Paper</a></li>
-								<li><a href="#">Group Project</a></li>
-								<li><a href="#">Final Presentation</a></li>
+								<li class="assignment paper"><a href="./start.html">Research Paper</a></li>
+								<li class="assignment project"><a href="#">Group Project</a></li>
+								<li class="assignment presentation"><a href="#">Final Presentation</a></li>
 								<li role="separator" class="divider"></li>
 								<li><a href="#">Add New Assignment</a></li>
 							</ul>
@@ -101,16 +106,19 @@
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu">
-										<li><a href="#" id='paper'>Research Paper</a></li>
-										<li><a href="#" id='project'>Group Project</a></li>
-										<li><a href="#" id='presentation'>Final Presentation</a></li>
+										<li><a href="#" class='paper'>Research Paper</a></li>
+										<li><a href="#" class='project'>Group Project</a></li>
+										<li><a href="#" class='presentation'>Final Presentation</a></li>
 										<li role="separator" class="divider"></li>
 										<li><a href="#">Add New Assignment</a></li>
 									</ul>
 								</div>
 								<div class="form-group">
 									<label for="time" class="title">Time Spent:</label>
-									<input type="time" class="form-control" id="time" placeholder="00:00">
+									<form id="time" class="form-inline">
+										<input id="time-hr" type="text" class="input-mini" placeholder="00">&nbspHours
+										<input id="time-min" type="text" class="input-mini" placeholder="00">&nbspMinutes
+									</form>
 								</div>
 								<div class="form-group">
 									<label for="comment" class="title">Additional Notes:</label>
@@ -121,7 +129,7 @@
 
 					<div class="modal-footer">
 						<button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">CANCEL</button>
-						<button class="btn btn-success" data-dismiss="modal" aria-hidden="true">SUBMIT</button>
+						<button id="submit" class="btn btn-success" data-dismiss="modal" aria-hidden="true">SUBMIT</button>
 					</div>
 				</div>
 
@@ -137,7 +145,7 @@
             	<div class="caption">
 					<h3>EECS 330</h3>
 					<p>Current Grade: 98%</p>
-					<p><a href="#" class="btn btn-warning" role="button">Enter grades</a> </p>
+					<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
             	</div>
           	</div>
 
@@ -145,7 +153,7 @@
             	<div class="caption">
               		<h3>Math 311</h3>
               		<p>Current Grade: 95%</p>
-              		<p><a href="#" class="btn btn-warning" role="button">Enter grades</a> </p>
+              		<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
             	</div>
 			</div>
 			
@@ -153,7 +161,7 @@
             	<div class="caption">
               		<h3>History 300</h3>
               		<p>Current Grade: 60%</p>
-              		<p><a href="#" class="btn btn-warning" role="button">Enter grades</a> </p>
+              		<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
             	</div>
           	</div>
 
@@ -161,7 +169,7 @@
             	<div class="caption">
             		<h3>Chem 250</h3>
               		<p>Current Grade: 88%</p>
-              		<p><a href="#" class="btn btn-warning" role="button">Enter grades</a> </p>
+              		<p><a href="grade.html" class="btn btn-warning" role="button">Enter grades</a> </p>
             	</div>
           	</div>
 

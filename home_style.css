@@ -66,7 +66,12 @@ body {
 	width: 0;
 	max-width: 690px;
 	opacity: 0;
-	transition: width 300ms ease, opacity 250ms ease 50ms;
+	transition: width 400ms ease, opacity 100ms ease 200ms;
+}
+
+.form.btn-info {
+	transform: translatex(-50%);
+	margin-left: 0;
 }
 
 .form.active {
@@ -275,7 +280,7 @@ h3 {
 #log_assignment{
 	font-size: 18px;
 	color: black;
-	background-color: lightgrey;
+	background-color:lightblue;
 	max-width:  360px; 
 	margin-bottom: 12px;
 }
@@ -291,4 +296,13 @@ h3 {
 .form-control{
 	width: 300px;
 	font-size: 16px;
+}
+
+.input-mini{
+	text-align: center;
+	margin: 6px 6px;
+}
+
+.alert{
+	text-align: center;
 }
