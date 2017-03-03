@@ -16,16 +16,27 @@
 </head>
   </head>
 
-  <body onload="startTime()">
-
+  <body onload="startTime(),startTimer()">
     <div class="container-narrow">
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="start.html">Start Studying</a></li>
-          <li><a href="grade.html">Classes</a></li>
-          <li><a href="#">Analytics</a></li>
+          <li class="dropdown grades">
+					<a class="dropdown-toggle"
+						data-toggle="dropdown"
+						href="#">
+							Grades
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="grade.html">EECS 330</a></li>
+							<li><a href="#">MATH 311</a></li>
+							<li><a href="#">HISTORY 300</a></li>
+							<li><a href="#">CHEM 250</a></li>
+						</ul>
+				</li>
+          <li><a href="analytics.html">Analytics</a></li>
         </ul>
         <h3><a href="index.html">Study Tracker</a></h3>
       </div>

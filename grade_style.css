@@ -125,6 +125,10 @@ h3, h4{
 	margin-bottom: 24px;
 }
 
+h2{
+	color: steelblue;
+}
+
 .span6{
 	text-align: left;
 }
@@ -141,6 +145,8 @@ h3, h4{
 	min-width: 300px; 
 	height: 360px; 
 	max-width: 600px; 
-	margin-top: 5px;
+	margin-top: 120px;
+	border-style: solid;
+	border-color: lightskyblue;
+	border-radius: 5px;
 }
-
